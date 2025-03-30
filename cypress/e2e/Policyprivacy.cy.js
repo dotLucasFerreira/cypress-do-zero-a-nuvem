@@ -1,6 +1,6 @@
 describe('Acessando privacy independente',()=>{
     beforeEach(()=>{
-      cy.visit('./src/nfstock.html')
+      cy.visit('./src/privacy.html')
     }),
     it.only('Verificando test',()=>{
       cy.get('#title').should('be.visible')
