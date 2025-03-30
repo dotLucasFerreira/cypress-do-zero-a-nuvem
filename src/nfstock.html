@@ -1,0 +1,773 @@
+<html lang="pt-BR"><head>
+    <title>Administradores :: nf-stock - Área Administrativa</title>
+    <meta name="description" content="Nota Fiscal eletrônica">
+    <meta name="keywords" content="Nota Fiscal eletrônica, alterdata, nfe, danfe, legislação fiscal brasileira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/Content/images/nf-stock_favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="shortcut icon" href="/Content/images/nf-stock_favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/Content/images/nf-stock_favicon.svg">
+    
+    <link href="/Content/sistema?v=lWpUwuHm4vN_h_61OMxY1uWRrRs5LUCLIEEo0kYvnf81" rel="stylesheet">
+
+    
+<style type="text/css" id="operaUserStyle"></style></head>
+
+<body>
+    <div id="wrap" class="clearfix">
+        
+
+<div id="barraTopo" class="navbar navbar-fixed-top clearfix hidden-print">
+    <div class="navbar-inner">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+        </a>
+        <a class="brand" href="/Sistema/Home">
+            nf-stock
+        </a>
+        <div class="nav-collapse collapse">
+            <span id="clientes-count"></span>
+            <ul class="nav pull-right visible-desktop">
+                
+                    <li class="dropdown">
+                        <a href="#" id="notificacao-important" class="dropdown-toggle" data-toggle="dropdown" title="" style="padding: 10px 10px 11px;" data-original-title="Você possui 0 nova notificação...">
+                            <i class="icon-globe icon-2x"></i>
+
+
+                            <b class="caret" style="display: inline-block; margin-bottom: 10px; margin-top: 14px;"></b>
+                        </a>
+                        <ul class="dropdown-menu pull-right" role="menu" style="overflow: auto; max-height: 300px">
+                            <li class="nav-header">Notificação</li>
+                            <li class="divider"></li>
+
+                            
+
+                        </ul>
+                    </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 10px 10px 11px;">
+                        <i class="icon-user icon-2x"></i>
+                        <b class="caret" style="display: inline-block; margin-bottom: 10px;margin-top: 14px;"></b>
+                    </a>
+
+                    <ul class="dropdown-menu pull-right" role="menu" style="width: 380px; padding-bottom: 0;overflow: hidden;">
+                        <li>
+                            <div>
+                                <div style="margin: 10px; display: flex; height: 100%; min-height: 100px; align-items: center; gap:10px;">
+                                    <div style="display:flex;align-self: stretch; align-items: center;">
+                                            <img id="ImgLogoMedio" src="/Content/images/no-photo.gif" width="90px" height="90px" alt="Logo Atual" class="img-polaroid">
+                                    </div>
+                                    <div style="display: flex; align-items: center;flex-direction: column;align-self: stretch;flex: 1;">
+
+                                        <div style="width: 240px;padding: 5px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                                            <input type="hidden" id="cliente-id-destino" value="44">
+                                                <span class="label"><i class="icon-user"></i> Empresa </span><br>
+                                            <span id="nome-contador" class="lead" title="" data-original-title="lucasfsouza.sup.pack@alterdata.matriz">lucasfsouza.sup.pack@alterdata.matriz </span><br>
+                                            <small id="cpfcnpj-contador" class="muted">321321.321.321-32</small><br>
+<small id="email-contador" title="" data-html="true" data-placement="bottom" class="muted" data-original-title="suporte@alterdata.com.br">suporte@alterdata.com.br</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="margin: 15px 0 0;">
+                            <div class="row-fluid" style="background: #f5f5f5">
+                                <div class="span12 text-center" style="padding: 15px 0 15px;">
+                                <a href="/Autenticacao/Logout" class="btn btn-small">
+                                    <i class="icon-off"></i>
+                                    Sair
+                                </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav pull-right hidden-desktop">
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-globe"></i>
+                            <span style="font-size: 0.8em" class="badge badge-important notificacao">0</span>
+                            Notificação
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu pull-right" role="menu">
+
+
+                        </ul>
+                    </li>   			 
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user"></i>
+                        Thatto
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li>
+                            <a href="/Autenticacao/Logout">
+                                <i class="icon-off"></i>
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- novidade da versão -->
+            <!--Computer-->
+            <ul class="nav pull-right visible-desktop">
+                <li class="dropdown" id="menu-novidades-da-versao">
+                    <!--<a href='#' class='dropdown-toggle' style="padding: 10px 10px 11px;" data-toggle="modal" data-target="#novidades-da-versao-modal"'>-->
+                    <a href="#" class="dropdown-toggle" style="padding: 10px 10px 11px;" '="">
+                        <i class="icon-bullhorn icon-2x"></i>
+                            <span class="badge badge-important" style="margin-left: -20px" id="menu-novidades-da-versao-important">!</span>
+                    </a>
+                </li>
+            </ul>
+            <!--Mobile-->
+            <ul class="nav pull-right hidden-desktop">
+                <li class="dropdown" id="menu-novidades-da-versao-mobile">
+                    <a href="#" class="dropdown-toggle" style="padding: 10px 10px 11px;">
+                        <i class="icon-bullhorn"></i>
+                            <span class="badge badge-important" style="font-size: 0.8em" id="menu-novidades-da-versao-important-mobile">!</span>
+                        Novidades da versão
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div id="colunaMenu" class="span2">
+                    
+<div id="menuLateral" class="accordion span2">
+    
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class=" accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseClientes">
+                <i class="icon-group"></i>
+                Clientes
+                <i class="pull-right icon-chevron-right"></i>
+            </strong>
+        </div>
+
+        <div id="collapseClientes" class="accordion-body  collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">
+
+                    <li class="">
+                        <a href="/Adm/Clientes">
+                            <i class="icon-list"></i>
+                            Listar Clientes
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="/Adm/Clientes/AtrasadosCrawler">
+                            <i class="icon-list-alt"></i>
+                            Atrasados busca Nfe
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/Adm/Clientes/RelatorioEmitidosPorOrigem">
+                            <i class="icon-list-alt"></i>
+                            Emitidos Por Origem
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class="active accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseUsuarios">
+                <i class="icon-user"></i>
+                Administradores
+                <i class="pull-right icon-white icon-chevron-down"></i>
+            </strong>
+        </div>
+        <div id="collapseUsuarios" class="accordion-body in collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">
+
+                    <li class="active">
+                        <a href="/Administradores/Listar">
+                            <i class="icon-list"></i>
+                            Listar Usuários
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class=" accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseBilhetagem">
+                <i class="icon-list-alt"></i> Bilhetagem <i class="pull-right icon-chevron-right"></i>
+            </strong>
+        </div>
+        <div id="collapseBilhetagem" class="accordion-body  collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">        
+                    <li class=""><a href="/Adm/RelatorioBilhetagem"><i class="icon-list"></i> Listar Contadores</a></li>
+                    <li class=""><a href="/Adm/Clientes/AcimaDoPlanoBilhetagem"><i class="icon-list-alt"></i> Clientes acima do plano</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class=" accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseNotas">
+                <i class="icon-barcode"></i>
+                Buscar
+                <i class="pull-right icon-chevron-right"></i>
+            </strong>
+        </div>
+        <div id="collapseNotas" class="accordion-body  collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">
+                    <!-- 
+                    <li class=""><a href="/AdmAlterdata/EmailsNaoProcessadas"><i class="icon-list"></i> N&#227;o Processadas</a></li>
+                    -->
+                    <li class=""><a href="/AdmAlterdata/SituacaoNFe"><i class="icon-barcode"></i> Buscar NFe</a></li>
+                    <li class=""><a href="/AdmAlterdata/SituacaoNFCe"><i class="icon-barcode"></i> Buscar NFCe</a></li>
+                    <li class=""><a href="/AdmAlterdata/SituacaoCFe"><i class="icon-barcode"></i> Buscar CFe</a></li>
+                    <li class=""><a href="/AdmAlterdata/SituacaoCTe"><i class="icon-truck"></i> Buscar CTe</a></li>
+                    <li class=""><a href="/AdmAlterdata/SituacaoNfse"><i class="icon-barcode"></i> Buscar NFSe</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class=" accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseFerramentas">
+                <i class="icon-wrench"></i> Ferramentas <i class="pull-right icon-chevron-right"></i>
+            </strong>
+        </div>
+        <div id="collapseFerramentas" class="accordion-body  collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class=""><a href="/Adm/RotinaDownloadSefaz"><i class="icon-globe"></i> Rotina Download Sefaz</a></li>                    
+              
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <strong class=" accordion-toggle collapsed " data-toggle="collapse" data-parent="#menuLateral" data-target="#collapseLog">
+                <i class="icon-barcode"></i> Log <i class="pull-right icon-chevron-right"></i>
+            </strong>
+        </div>
+        <div id="collapseLog" class="accordion-body  collapse">
+            <div class="accordion-inner">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class=""><a href="/AdmAlterdata/Log"><i class="icon-list"></i> Log de movimentação</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+</div>
+                </div>
+                <div id="colunaPrincipal" class="span10">
+                    
+                    
+                        <div class="page-header">
+                            <h1>
+                                <i class="icon-table"></i>
+                                Listar usuários administradores
+                                <small>
+                                    <i class=""></i>
+                                    
+                                </small>
+                            </h1>
+                        </div>
+                    
+
+
+<div id="menuHorizontal" class="navbar hide">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li class="dropdown ">        
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-group"></span> Clientes <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/Adm/Clientes">
+                            <span class="icon-list-alt"></span> Listar Clientes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Adm/Clientes/AcimaDoPlanoBilhetagem">
+                            <span class="icon-list-alt"></span> Clientes acima do plano
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Adm/Clientes/RelatorioEmitidosPorOrigem">
+                            <span class="icon-list-alt"></span> Emitidos Por Origem
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Adm/Clientes/AtrasadosCrawler">
+                            <span class="icon-list-alt"></span> Atrasados crawler
+                        </a>
+                    </li> 
+
+                </ul>
+            </li>
+
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span> Administradores <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Administradores/Listar"><span class="icon-list"></span> Listar Usuários </a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-wrench"></span> Bilhetagem <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Adm/RelatorioBilhetagem"><span class="icon-list"></span> Listar Contadores</a></li>     
+                    <li><a href="/Adm/Clientes/AcimaDoPlanoBilhetagem"><span class="icon-list-alt"></span> Clientes acima do plano</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-barcode"></span> NF-e / CT-e <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                   <!-- 
+                   <li><a href="/AdmAlterdata/EmailsNaoProcessadas"><span class="icon-list"></span> N&#227;o Processadas</a></li>
+                    -->
+                    <li><a href="/AdmAlterdata/SituacaoNFe"><span class="icon-barcode"></span> Buscar NFE</a></li>
+                    <li><a href="/AdmAlterdata/SituacaoCTe"><span class="icon-truck"></span> Buscar CTE</a></li>
+                </ul>
+            </li>
+
+
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-wrench"></span> Ferramentas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Adm/RotinaDownloadSefaz"><span class="icon-globe"></span> Rotina Download Sefaz</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-barcode"></span> Log <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/AdmAlterdata/Log"><span class="icon-list"></span> Log de movimentação</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+                    
+
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Login</th>
+                <th class="wrap">Cadastrar Usuário</th>
+                <th class="wrap">Editar / Excluir Clientes</th>
+                <th class="wrap">E-mail sobre Bilhetagem</th>
+                <th>Ativo</th>
+                <th class="w80 wrap tCenter">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td class="tLeft" data-title="Login">ADEMILSON.PROSK8</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALE.G.SILVA.PRO</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALESSANDRA.SILVA.PRO</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALEXANDRA.ADM</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALINEABREU.ADM</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Sim</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Não</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALINESILVA.JUR</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Não</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALINESOARES.ADM</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Não</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALLAN.VENDAS</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALLINE.DSN.PACK</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Não</td>
+                    <td class="tLeft" data-title="Permite Excluir">Não</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Não</td>
+                    <td class="tLeft" data-title="Ativo">Não</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tLeft" data-title="Login">ALTAIR.DSN.PACK</td>
+                    <td class="tLeft" data-title="Permite Cadastrar">Sim</td>
+                    <td class="tLeft" data-title="Permite Excluir">Sim</td>
+                    <td class="tLeft" data-title="Pode receber e-mail">Sim</td>
+                    <td class="tLeft" data-title="Ativo">Sim</td>
+                    <td class="tCenter td-icon nowrap" data-title="Ações">
+                        <div class="btn-group">
+
+                                 <a class="btn btn-small disabled" title="" data-original-title="Edição não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-edit"></i>
+                                    </a>
+
+                                    <a data-toggle="modal" class="btn btn-small disabled" title="" data-original-title="Exclusão não permitida. Por favor, entrar em contato com o Suporte.">
+                                        <i class="icon-trash"></i>
+                                    </a>
+                            
+                                
+                           
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination pagination-centered">
+        <ul>
+                <li class="disabled"><a title="" data-original-title="não há página anterior!">«</a></li>
+                            <li class="active"><a title="" data-original-title="você está nesta página">1</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=2" data-original-title="ir para página 2">2</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=3" data-original-title="ir para página 3">3</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=4" data-original-title="ir para página 4">4</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=5" data-original-title="ir para página 5">5</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=6" data-original-title="ir para página 6">6</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=7" data-original-title="ir para página 7">7</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=8" data-original-title="ir para página 8">8</a></li>
+                <li class="hidden-phone"><a title="" href="/Administradores/Listar?pagina=9" data-original-title="ir para página 9">9</a></li>
+                <li class="visible-phone disabled pull-left"><a>..</a></li>
+                <li><a title="" href="/Administradores/Listar?pagina=10" data-original-title="ir para página 10">10</a></li>
+                            <li><a title="" href="/Administradores/Listar?pagina=2" data-original-title="próxima página">
+                    »</a> </li>
+        </ul>
+        <div id="collapse-paginacao-avancada">
+            <!--<a data-toggle="collapse" data-target="#paginacao-avancada" class="pointer btn btn-small btn-inverse" title="Pagina&#231;&#227;o avan&#231;ada..."><i class="icon-plus icon-white"></i></a>-->
+        </div>
+    </div>
+<div>
+    <div id="paginacao-avancada" class="collapse hauto">
+        <hr class="clearfix">
+        <ul class="pager">
+                <li class="previous">
+
+                    <a href="/Administradores/Listar?pagina=1">
+                        <i class="icon-arrow-left"></i>
+                        Primeira Página
+                    </a></li>
+            <li>
+
+                <form class="form-search inline-display" action="/Administradores/Listar?pagina=%40numero&amp;tamanho=%40tamanho" novalidate="novalidate">
+                    <span class="">Total: 176 itens</span>
+
+                    <div class="input-append">
+                        <input type="text" class="span4 search-query" data-mask="?99999" data-mask-placeholder="" placeholder="Página">
+                        <button class="btn" onclick="return irParaPagina(this, 10);">
+                            <i class="icon-map-marker"></i>
+                            Ir!
+                        </button>
+                    </div>
+
+                    <select class="input-medium" onchange="return alterarTamanhoPagina(this, 1);">
+                        <option selected="" value="">notas por página</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </form>
+            </li>
+                <li class="next">
+
+                    <a href="/Administradores/Listar?pagina=18&amp;tamanho=%40tamanho" title="" data-original-title="Página 18...">
+                        Última Página
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="rodape">
+    <div id="infofooter">                                                            
+        <div class="corpo-footer">
+            <p class="muted credit hidden-tablet hidden-phone">©1989 - 2025 - Alterdata Software - Direitos reservados | Versão do sistema: 2.00.143.1 </p>
+            <p class="muted credit visible-tablet visible-phone">©2023 - <a id="botaoLogoFooterCelular" href="http://www.alterdata.com.br" target="_blank">Alterdata Software</a></p>
+        </div>
+        <div class="corpo-footer hidden-phone">
+            <div class="contato-footer">
+                <a id="botaoContatoFooter" class="btn btn-link" href="https://www.alterdata.com.br/Contato" target="_blank">Contato</a>  |  
+                <a id="botaoSuporteFooter" class="btn btn-link" href="https://cliente.alterdata.com.br" target="_blank">Suporte</a>
+            </div>
+            <div class="logo-footer">
+                <a id="botaoLogoFooter" href="http://www.alterdata.com.br/" target="_blank"><img src="/Content/images/alterdata_bold.svg" id="logofooter"> </a>
+            </div>
+        </div>                   
+    </div>
+</div>
+    <section id="scripts">
+        <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-J75SP7GX6V&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/Scripts/preCulture?v=aImeEHr1P-g_rQId_CToUNCvjdJtJkxkQ0tCrsGTSis1"></script>
+
+        <script src="/Scripts/jquery.globalize/cultures/globalize.culture.pt-BR.js"></script>
+
+        <script type="text/javascript">
+            window.UICulture = 'pt-BR';
+            window.FazerdownloadNFe = 'Fazer download da nota para seu PC',
+                window.DownloadNFE = 'Baixar',
+                window.Today = 'Hoje';
+            try {
+                Globalize.cultureSelector = window.UICulture;
+            } catch (e) { console.log(e); }
+
+            try {
+                Globalize.culture(window.UICulture);
+            } catch (e) { console.log(e); }
+        </script>
+        <script src="/Scripts/sistema?v=mfQIs3lgT79izj1Bx10jfuz6dTXtQ1znhFChH8Fhcsw1"></script>
+
+        <script src="/Scripts/adm?v=NvxVjIXufOj9mfWOMpRl9Q7QzQ5Xrb-ltMSleIB_xPI1"></script>
+
+        <!--[if lte IE 9]>
+                <script src="/Content/min/jquery.IE.placeholder.min.js?id=5d0f5e68-1a1e-42b3-8737-8d38daa0646d" type="text/javascript"></script>
+            <![endif]-->
+        
+    
+<div id="ConfirmaAcao" class="modal hide fade" role="dialog" aria-labelledby="titulo" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="titulo"></h3>
+    </div>
+    <div class="modal-body">
+        <p>
+            Deseja realmente <span id="acao"></span><b id="Alvo"></b>? <br>
+            <small id="descricao" class="text-warning"></small>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">
+            Cancelar</button>
+        <a id="LinkConfirmaAcao" class="btn btn-primary">Ok</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="/Scripts/paginas/Listar.js"></script>
+
+        
+        <script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-36436350-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </section>
+
+
+
+</body></html>
